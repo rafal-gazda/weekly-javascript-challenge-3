@@ -1,0 +1,45 @@
+.form__fieldset{
+	width: 380px;
+	margin: auto;
+}
+
+.form__container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: center;
+}
+
+.form__container label{
+	flex-basis: 25%;
+	margin-right: 8px;
+}
+
+.form__container input{
+	flex-basis: 60%;
+}
+
+.form__container--last{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+.form__container--last input{
+	flex-basis: 10%;
+}
+
+.form__container--last label{
+	flex-basis: 35%;
+	text-align: left;
+}
+
+.form__messaggeError{
+	flex-basis: 60%;
+	margin-left: 25%;
+	padding-left: 8px;
+	height: 22px;
+	font-size: 14px;
+}
+

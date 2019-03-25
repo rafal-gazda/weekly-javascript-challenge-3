@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weekly JavaScriptChallenge</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form action="" class="form">
+		<fieldset class="form__fieldset form__customer"> 
+			<legend>Dane klienta</legend>
+			<div class="form__container">
+				<label for="name">Imię</label>
+				<input type="text" class="form__input" id="name" type-form-input="nameString">
+				<div class="form__messaggeError"></div>
+				<label for="surname">Nazwisko</label>
+				<input type="text" class="form__input" id="surname" type-form-input="nameString">
+				<div class="form__messaggeError"></div>
+				<label for="street">Ulica</label>
+				<input type="text" class="form__input" id="street" type-form-input="simpleString">
+				<div class="form__messaggeError"></div>
+				<label for="city">Miasto</label>
+				<input type="text" class="form__input" id="street" type-form-input="simpleString">
+				<div class="form__messaggeError"></div>
+				<label for="postalCode">Kod pocztowy</label>
+				<input type="text" class="form__input" id="postalCode" type-form-input="simpleString">
+				<div class="form__messaggeError"></div>
+			</div>
+		</fieldset>
+		<fieldset class="form__fieldset form__company">
+			<legend>Dane firmy</legend>
+			<div class="form__container">
+				<label for="nameCompany" >Nazwa</label>
+				<input type="text" class="form__input" id="nameCompany" type-form-input="nameString">
+				<div class="form__messaggeError"></div>
+				<label for="nip">NIP</label>
+				<input type="text" class="form__input" id="nip" type-form-input="nip">
+				<div class="form__messaggeError"></div>
+				<label for="streetCompany">Ulica</label>
+				<input type="text" class="form__input" id="streetCompany" type-form-input="simpleString">
+				<div class="form__messaggeError"></div>
+				<label for="cityCompany">Miasto</label>
+				<input type="text" class="form__input" id="cityCompany" type-form-input="simpleString">
+				<div class="form__messaggeError"></div>
+			</div>
+		</fieldset>
+		<fieldset class="form__fieldset form__price">
+			<div class="form__container">
+				<label for="price">Kwota</label>
+				<input type="text" id="price" class="form__input" type-form-input="price">
+				<div class="form__messaggeError"></div>
+			</div>
+		</fieldset>
+		<fieldset class="form__fieldset form__fieldset--last" >
+			<legend>Stan przesyłki</legend>
+			<div class="form__container form__container--last">
+				<input type="radio" id="consigment1" name="consigment" value="consigment1">
+				<label for="consigment1" value="consignmentIssued">Wystawiona</label>
+				<input type="radio" id="consigment2" name="consigment" value="consignmentDelivered">
+				<label for="consigment2" >Doręczona</label>
+				<input type="radio" id="consigment3" name="consigment" value="consignmentPaid">
+				<label for="consigment3">Opłacona</label>
+				<input type="radio" id="consigment4" name="consigment" value="consignmentDelayed">
+				<label for="consigment4">Spóźniona</label>
+			</div>
+		</fieldset>
+	</form>
+	
+	<script src="index.js"></script>
+</body>
+</html>
